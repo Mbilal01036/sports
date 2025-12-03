@@ -1,0 +1,1038 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+      font-family: 'bebas neuu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main{
+        background-color: #151B28;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container{
+    max-width:1600px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    padding: 21PX 15px;
+    background-color:#151B28 ;
+    color: white;
+}
+.head-top{
+    display: flex;
+        align-items: center;
+            margin-bottom: 25px;
+}
+.head-left{
+    width: 30%;
+    display: flex;
+    gap: 10px;
+}
+.logo{
+    width: 30px;
+    height: 32px;
+  transform: rotate(270deg);
+}
+.sport{
+    font-size: 22px;
+    font-weight: 900;
+        text-transform: uppercase;
+            color: white;
+}
+.head-right{
+     display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+}
+ .navbar ul li:first-child{
+    position: relative;
+ }
+.navbar ul.dropdown-menu  {
+       display: none;
+    position: absolute;
+    min-width: 235px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    top: 35px;
+    left: 0px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #151b28;
+    border-radius: 5px;
+ }
+
+ .navbar .dropdown-menu.show-dropdown{
+    display: flex;
+ }
+ .dropdown-menu li{
+     color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+ }
+
+    .dropdown{
+              cursor: pointer;
+    }
+    .dropdown button{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 10px;  
+        padding: 0 !important;
+            border: none;
+    }
+    .dropdown button span{
+        text-transform: capitalize;
+            font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    color: white;
+    }
+    .dropdown i {
+        width: 15px;
+        color: white;
+    }
+
+.dropicon{
+    width: 13px;
+    height: 20px;
+        /* padding-top: 8px; */
+}
+
+     .navbar ul{
+        display: flex;
+        gap: 25px;
+         list-style: none;
+        
+     }
+    .navbar ul li a{
+        text-decoration: none;
+      line-height: 20px;
+      color: white;
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    
+.navbar {
+  display: flex;
+}
+.navbar a {
+  text-decoration: none;
+  /* padding: 0.5rem; */
+  transition: background 0.3s;
+
+}
+#gaib{
+    display: none;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.line{
+        width: 2px;
+    height: 30px;
+    background: #989494;
+}
+.coaches{
+        text-transform: capitalize;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    color: white;
+}
+.start{
+        padding: 13px 13px;
+    background: #FF8400;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+      transition: all 0.3s ease;
+        border: 1px solid transparent;
+}
+.start:hover {
+  background-color: transparent;
+  border-color: #fc724d; 
+  border: 1px solid #fc724d ;
+  color: #fc724d;
+}
+.list ul{
+    list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.list ul li a{
+     text-decoration: none;
+      line-height: 20px;
+      color:white;
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: capitalize;
+            padding: 21px 10px;
+    display: inline-block;
+}
+/* banner */
+.banner{
+    margin-top: 138px;
+     width: 100%;
+    height: 900px;
+    background-image: url(./src/assets/images//Hero\ \(1\).png);
+    background-repeat: no-repeat;
+      background-size: cover;
+          margin-bottom: 100px;
+}
+.banner-box{
+       max-width: 924px;
+    color: white;
+    min-height: 583px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0px;
+}
+h1{
+     font-size: 86px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    text-shadow:
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+}
+.banner-box p{
+          font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    word-break: break-word;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+ text-align: start;
+}
+.button a{
+    display:inline-block;
+        padding: 19px 26px;
+    cursor: pointer;
+    background: #ff8400;
+    border: none;
+    border-radius: 5px;
+        color: white;
+    text-decoration: none;
+    margin-right: 10px;
+        font-size: 22px;
+    font-weight: 500;
+    border: 1px solid transparent;
+      transition: all 0.3s ease;
+}
+.button a:hover {
+  background-color: transparent;
+  border-color: #fc724d;
+  border: 1px solid #fc724d;
+
+}
+.btn{
+    
+    background-color: transparent !important;
+    margin-right: 0px !important;
+}
+/* banner end */
+
+/* pick-sport start */
+.pick-sport{
+margin-bottom: 100PX;
+}
+.pick{
+    margin: 0 auto;
+    max-width: 752px;
+    text-align: center;
+}
+h2{
+    font-size: 54px;
+    font-weight: 700;
+    color: white;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+}
+ .pick p{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    word-break: break-word;
+        margin-bottom: 64px;
+}
+.pick-card{
+        display: flex;
+   margin: 0 auto 84px;
+    gap: 20px;
+}
+.card{
+  width: calc(33.3% - 12px);
+    text-align: center;
+}
+.image{
+max-width: 370px;
+    height: 455px;
+}
+.doot{
+display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #9EADBA;
+}
+.circle.fill{
+background-color: #9EADBA;
+}
+ .card h3{
+    font-size: 22px;
+    font-weight: 500;
+    color:#FF8400 ;
+    margin-bottom: 24px;
+}
+ .card p{
+font-size: 18px;
+font-weight: 500;
+word-break: break-word;
+color: white;
+    max-width: 260px;
+    margin: 32px auto;
+}
+.card a {
+  position: relative;
+  border: 1px solid #FF8400;
+  color: #FF8400;
+  display: block;
+  text-decoration: none;
+  padding: 15px 15px;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
+}
+
+/* Background layer - hidden initially */
+.card a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #FF8400;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+/* On hover - background expands smoothly from left */
+.card a:hover::before {
+  width: 100%;
+}
+
+/* Text turns white on hover */
+.card a:hover {
+  color: white;
+}
+.text{
+     font-size: 22px;
+    font-weight: 500;
+    color: white;
+    margin: 0 auto;
+        max-width: 350px;
+}
+/* pick-sport end */
+
+/* college start */
+.college{
+    background-image: url(./src/assets/images/3in1.webp);
+    width: 100%;
+    height: 1000px;
+     background-repeat: no-repeat;
+      background-size: cover;
+          margin-bottom: 100px;
+              background-position: center;
+}
+.college-box{
+       margin: 0 auto;
+    display: flex;
+    max-width: 900px;
+    flex-direction: column;
+    height: 600px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.college h2{
+    font-size: 54px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+.college p{
+    font-size: 18px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+        word-break: break-word;
+     
+}
+/* .college end */
+
+
+
+.process{
+    margin-bottom: 100px;
+}
+.process h2{
+       max-width: 450px;
+    margin: 0 auto 64px;
+}
+
+.accord-card-wrapp{
+      width: 70%;
+    margin: 20px auto;
+ 
+}
+.pannel{
+    color: white;
+   opacity:0;
+    background-color: #FF8400;
+    height:0;
+    transition: all .3s ease;
+}
+.pannel > .open{
+    color: white;
+   opacity:1;
+   
+    height: 50px;
+}
+
+.card-image{
+    width: 48px;
+    height: 49px;
+}
+.accordion{
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+           padding:  32px;
+        background: #1C2534;
+}
+.accordion .signup{
+    /* background-color: red;
+    border: 1px solid red; */
+      cursor: pointer;
+    transition: all .3s ease;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: white;
+}
+
+.plus-image{
+    width: 32px;
+    height: 32px;
+    transition: transform .1s linear;
+}
+
+
+
+
+.athletes{
+    margin-bottom: 100px;
+}
+.athletes-card{
+display: flex;
+gap: 24px;
+
+}
+.athletes-box{
+   width: calc(33.3% - 15px);
+    height: 451px;
+    position: relative;
+}
+.athletes-data{
+        position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.athletes-box h4{
+ font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 24px;
+    padding: 0 30px;
+}
+.athletes-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.athletes-box a {
+  position: relative;
+  border: 1px solid #FF8400;
+  color: #FF8400;
+  display: block;
+  text-decoration: none;
+  padding: 15px 15px;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 30px 30px;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
+}
+
+/* Create a background layer from left side */
+.athletes-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #FF8400;
+  z-index: -1;
+  transition: width 0.4s ease-in-out;
+  border-radius: 5px;
+}
+
+/* Hover effect - background expands left to right */
+.athletes-box a:hover::before {
+  width: 100%;
+}
+
+/* Change text color on hover */
+.athletes-box a:hover {
+  color: white;
+}
+
+
+
+.SUCCESS-STORIEs{
+    margin-bottom: 100px;
+}
+.SUCCESS-box{
+   display: flex;
+    position: relative;
+    padding: 83px 0;
+    z-index: 1;
+}
+
+.box-1{
+    max-width: 600px;
+    padding: 64px;
+    background: #333B48;
+    margin-top: 87px;
+    height: 518px;
+
+}
+.box-1 span{
+    color: #FF8400;
+    margin-bottom: 15px;
+    display: block;
+}
+.box-1 h3{
+          font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+}
+.box-1 p{
+    font-size:18px;
+    font-weight: 500;
+    color:#fdfdfd ;
+       word-break: break-word;
+           text-align: justify;
+}
+.box-2{
+        max-width: 1200px;
+    height: 691px;
+    position: relative;
+    right: 71px;
+    z-index: -1;
+}
+.box-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.two-icon i{
+          color: white;
+    font-size: 22px;
+       padding-right: 50px;
+       position: relative;
+       left: 50%;
+}
+/* 
+SUCCESS-STORIEs end */
+
+.team-up{
+max-width: 750px;
+margin: 0 auto;
+text-align: center;
+    margin-bottom: 64px;
+}
+p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    color: white;
+    text-align: center;
+    word-break: break-word;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.team-down{
+    display: flex;
+    gap: 30px;
+}
+.tean-image{
+    width: calc(33.33% - 19px);
+ height: 850px;
+ background-color: white;
+}
+
+.tean-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .ready{
+    margin-bottom: 100px;
+} */
+.ready{
+    width:100% ;
+    height: 1000px;
+    background-image: url(./src/assets/images//messi-ronaldo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-position: center;
+}
+.ready-box{
+    display: flex;
+    font-size: 86px;
+    color: #FF8400;
+    font-weight: 700;
+    justify-content: center;
+    height: 1000px;
+    align-items: center;
+   
+}
+.follow{
+
+    background-image: url(./image//hero\ \(2\).png);
+    height: 500px;
+        background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.follow-box{
+    text-align: center;
+    max-width: 1000px;
+    padding: 133px 0px;
+    margin: 0 auto;
+
+}
+button {
+  background:#FF8400;
+  padding: 21px 26px;
+  border: none;
+  color: white;
+  cursor: pointer;
+   border-radius: 0 5px 5px 0;
+}
+.page6down {
+  display: flex;
+  justify-content: center;
+}
+input {
+  height: 58px;
+  width: 34.3%;
+  padding-left: 20px;
+      border: none;
+  background: #333B48;
+  outline: none;
+  border-radius:5px 0 0  5px ;
+}
+
+h3{
+       font-size: 35px;
+    font-weight: 700;
+    color: #FF8400;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.foot-box{
+    display: flex;
+    justify-content: space-between;
+        padding: 100px 0 0;
+
+}
+.foot-list li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+.foot-list a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+.foot-left{
+        display: flex;
+    gap: 10px;
+}
+.foot-icon{
+    display: flex;
+    gap: 40px;
+}
+.foot-icon i {
+    color: white;
+    font-size: 22px;
+   
+}
+/* .foot */
+
+/* .footer-two */
+.footer-two{
+    padding: 50px;
+}
+.footer-two p{
+        font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #FF8400;
+    text-align: left;
+    word-break: break-word;
+}
+.open p {
+    margin: 0 ;
+    padding: 40px;
+}
+/* .footer-two */
+
+
+.active .plus-image {
+    transform: rotate(45deg);
+}
+   .open{
+    color: white;
+   opacity:1;
+   
+    height: 150px;
+}
+@media (max-width:992px){
+   .SUCCESS-box {
+    flex-direction: column-reverse;
+    padding: 0%;
+   }
+   .box-2{
+  position: unset;
+   }
+   .box-1{
+margin: 0px;
+position: relative;
+left: 150px;
+bottom: 200px;
+padding: 30px;
+        height: unset;
+        width: 500px;
+   }
+   h1{
+    font-size: 70px;
+   }
+   .banner-box p{
+    font-size: 18px;
+   }
+   h2{
+       margin-bottom: 70px;
+   }
+   .accord-card-wrapp {
+    width: 100%;
+  
+}
+   .card{
+  width: calc(50% - 12px);
+   }
+  
+
+    .athletes-box{
+        width: calc(50% - 15px);
+    }
+  
+    .tean-image {
+    width: calc(50% - 19px);
+}
+  .line{
+    display: none;
+  }
+ .navbar {
+        background-color:#151B28;
+        position: fixed;
+        top: 0;
+        width: 225px;
+        text-align: right;
+        height: 100vh;
+        left: -100%;
+        transition: left .5s linear;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  .navbar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    li,a{
+        padding-left: 0;
+
+    }
+    a{
+        color: #000;
+        text-align: left;
+        padding: 20px;
+        display: block;
+    }
+  }
+  .navbar.show{
+    left: 0;
+  }
+  .dropdown{
+    display: none;
+  }
+.right{
+  
+    width: unset;
+}
+.image1{
+    max-width: 100%;
+}
+  .navbar.active {
+    display: flex;
+    justify-content: center;
+        text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    padding: 3px;
+  }
+    .navbar ul li a{
+        flex-direction: column;
+    }
+     .w-18{
+width: 50%;
+  }
+
+#gaib{
+    display: block;
+}
+.athletes-box h4 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.athletes-box a{
+    width: 83%;
+}
+.ready-box{
+    font-size: 50px;
+}
+
+}
+@media (max-width: 768px){
+   .line{
+display: none;
+   } 
+   .coaches{
+    display: none;
+   }
+       .card {
+               width: calc(100% - 12px);
+    }
+    .image {
+   
+    margin: 0 auto;
+}
+  .athletes-box {
+        width: calc(100% - 15px);
+    }
+    .SUCCESS-box {
+        flex-direction: column;
+                margin-bottom: 40px;
+    }
+      .athletes-card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box-1 {
+        margin: 0px auto;
+        padding: 30px;
+        height: unset;
+        width: unset;
+        position: unset;
+    }
+    .tean-image {
+        width: calc(100% - 19px);
+    }
+
+.banner{
+       height: 600px; 
+}
+    .pick-card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  .team-down{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button a {
+            width: 100%;
+    text-align: center;
+    font-size: 13px;
+    }
+#bilal{
+display: none;
+}
+.foot-box {
+    flex-wrap: wrap;
+}
+.w-50{
+width: 50%;
+ display: contents;
+}
+.w-100{
+    width: 100%;
+            display: flex;
+        justify-content: center;
+}
+.head-right {
+    gap:10px;
+}
+.head-top {
+    justify-content: space-between;
+}
+.start {
+    padding: 9px 6px;
+    font-size: 16px;
+}
+button {
+  border-radius: 5px; 
+}
+h1 {
+    font-size: 49px;
+}
+.banner-box p {
+   
+    padding: unset;
+}
+.two-icon i{
+    display: none;
+}
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+.college h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.college{
+    height: 700px;
+}
+    .athletes-box a {
+        width: 100%;
+        margin: 0px;
+    }
+.ready {
+    height: 700px;
+}
+.ready-box{
+height: 700px;
+}
+.page6down {
+    flex-direction: column;
+}
+input {
+          height: 58px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 5px;
+}
+.footer-two p{
+    text-align: center;
+}
+    .head-left{
+        width: 50%;
+    }
+     .head-right{
+        width: 50%;
+    }
+   .sport{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+   }
+
+
+
+
+
+}
+
