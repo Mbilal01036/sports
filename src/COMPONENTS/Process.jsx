@@ -168,7 +168,6 @@ const Process = () => {
       <div className="process">
         <div className="container">
           <h2>the process</h2>
-
           {/* 1 */}
           <div className="accord-card-wrapp">
             <div className="accordion" onClick={() => setOpen1(!open1)}>
